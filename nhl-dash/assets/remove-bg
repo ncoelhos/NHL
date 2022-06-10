@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir "logos-id-trans"
+for f in logos-Transparent/*.gif
+do
+    convert "$f" -fuzz 20%% -transparent White "${f%.*}.png"
+done
