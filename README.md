@@ -21,11 +21,11 @@ For our visualizations we'll use Plotly for its awesome interactive functions!
 
 ## Basic stats and Exploration - SQL
 
-A first exploration of the data is done using SQL through the SQLite3 module in python. The notebook with SQL queries answering basic questions can be found [here](EDA-SQL.ipynb). Besides exploring the data, in this notebook we create a series of filtered dataframes to be used further along in the project.
+A first exploration of the data is done using SQL through the SQLite3 module in python. The notebook with SQL queries answering basic questions can be found [here](Notebooks/EDA-SQL.ipynb). Besides exploring the data, in this notebook we create a series of filtered dataframes to be used further along in the project.
 
 ## EDA (with visuals!)
 
-After exploring the data, cleaning and filtering some useful dataframes, we use *pandas* and *plotly* to create some visuals on the data. The notebook with all of this can be found [here](EDA.ipynb). In this, we also prepare some functions to be used in our **Dash app** for interactive online data exploration.
+After exploring the data, cleaning and filtering some useful dataframes, we use *pandas* and *plotly* to create some visuals on the data. The notebook with all of this can be found [here](Notebooks/EDA.ipynb). In this, we also prepare some functions to be used in our **Dash app** for interactive online data exploration.
 
 ### Some of our graphs:
 
@@ -77,19 +77,20 @@ Without any tuning, this is our achieved accuracy on different models:
 |  1 | RandomForestClassWeight         |        0.593666 |
 |  2 | RandomForestBoostrapClassWeight |        0.593498 |
 
-Description of steps to clean the data and build the models for prediction can be found [here](Modeling.ipynb). The actual script for training the models can be found [here](modeling.py).
+Description of steps to clean the data and build the models for prediction can be found [here](Notebooks/Modeling.ipynb). The actual script for training the models can be found [here](PythonScripts/modeling.py).
 
 ## Finding files
 
 * Data exploration:
-    * [SQL](EDA-SQL.ipynb)
-    * [Visuals (Python)](EDA.ipynb)
+    * [SQL](Notebooks/EDA-SQL.ipynb)
+    * [Visuals (Python)](Notebooks/EDA.ipynb)
 * Modeling:
-    * [Descriptive steps](Modeling.ipynb)
-    * [Python script](modeling.py)
-    * [Hyperparameter tuning](modeling-confusionmatrix.py)
-    * [Model evaluation](EvaluatingModel.ipynb)
+    * [Descriptive steps](Notebooks/Modeling.ipynb)
+    * [Python script](PythonScripts/modeling.py)
+    * [Hyperparameter tuning](PythonScripts/modeling-confusionmatrix.py)
+    * [Model evaluation](Notebooks/EvaluatingModel.ipynb)
 * Dashboard:
+    * [Setting up](Notebooks/SettingUpDash.ipynb)
     * [Main folder](/nhl-dash)
     * [Main script](nhl-dash/nhl-dash-app-modular.py)
     * [Functions for dashboard](nhl-dash/functions.py)
