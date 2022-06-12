@@ -28,33 +28,42 @@ app.layout = html.Div(
         dbc.Row(
             [
                 dbc.Col(
-                    dcc.Dropdown(
-                        id="team-choice",
-                        options=team_options,
-                        style={"color": "#000000"},
-                        value=20,
-                        placeholder="Select team...",
-                        clearable=False,
-                    ),
+                    [
+                        html.H4("Select team:", style={"font-family": "Fantasy"}),
+                        dcc.Dropdown(
+                            id="team-choice",
+                            options=team_options,
+                            style={"color": "#000000"},
+                            value=20,
+                            placeholder="Select team...",
+                            clearable=False,
+                        ),
+                    ],
                     width=3,
                 ),
                 dbc.Col(
-                    dcc.Dropdown(
-                        id="season-choice",
-                        style={"color": "#000000"},
-                        placeholder="Select season...",
-                    ),
+                    [
+                        html.H4("Select Season:", style={"font-family": "Fantasy"}),
+                        dcc.Dropdown(
+                            id="season-choice",
+                            style={"color": "#000000"},
+                            placeholder="Select season...",
+                        ),
+                    ],
                     width=3,
                 ),
                 dbc.Col(
-                    dcc.Dropdown(
-                        id="type-choice",
-                        options=type_options,
-                        style={"color": "#000000"},
-                        value="Wrist Shot",
-                        placeholder="Select type of event...",
-                        clearable=False,
-                    ),
+                    [
+                        html.H4("Select Event Type:", style={"font-family": "Fantasy"}),
+                        dcc.Dropdown(
+                            id="type-choice",
+                            options=type_options,
+                            style={"color": "#000000"},
+                            value="Wrist Shot",
+                            placeholder="Select type of event...",
+                            clearable=False,
+                        ),
+                    ],
                     width=3,
                 ),
             ]
@@ -62,12 +71,15 @@ app.layout = html.Div(
         dbc.Row(
             [
                 dbc.Col(
-                    dcc.Dropdown(
-                        id="game-choice",
-                        style={"color": "#000000"},
-                        placeholder="Select game...",
-                        clearable=False,
-                    ),
+                    [
+                        html.H6("Select Game Date:", style={"font-family": "Fantasy"}),
+                        dcc.Dropdown(
+                            id="game-choice",
+                            style={"color": "#000000"},
+                            placeholder="Select game...",
+                            clearable=False,
+                        ),
+                    ],
                 ),
             ]
         ),
@@ -92,6 +104,7 @@ app.layout = html.Div(
             [
                 dbc.Col(
                     [
+                        html.H4("Select Event:", style={"font-family": "Fantasy"}),
                         dcc.Dropdown(
                             id="event-choice",
                             options=event_options,

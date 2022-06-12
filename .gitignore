@@ -6,3 +6,4 @@ nhl-env
 nhl-dash/nhl-dash-env
 model_df.pkl
 best_rf.sav
+nhl-dash-deploy
